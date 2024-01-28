@@ -1,70 +1,122 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Basic Section
 
-## Available Scripts
+[
+  {
+    "productId": "2472d02b-6fb0-403b-bd7b-84ec1c4f0f56",
+    "name": "Dry Fruit Putharekulu",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Made with Dry Fruits like Kaju, etc",
+    "price": 350,
+    "rating": 4.8,
+    "piecePerBox": 10,
+    "NetWeight": "100 gms"
+  },
+  {
+    "productId": "19857bee-ebd2-4106-8e35-239f81a1bb34",
+    "name": "Kova Putharekulu",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Made with Dry Fruits like Kaju and kova etc",
+    "price": 400,
+    "rating": 4.8,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  },
+  {
+    "productId": "06b2071f-4165-476d-9e73-0416df8d3e46",
+    "name": "Plane Pootharekulu Sugar",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Lite weight putharekulu with sugar",
+    "price": 150,
+    "rating": 5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  },
+  {
+    "productId": "1064dbef-f51c-4506-99c1-93f9e94a6976",
+    "name": "Plane Pootharekulu Jaggery",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Lite weight putharekulu with jaggery",
+    "price": 150,
+    "rating": 5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  }
+]
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Authentic Section
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+[
+  {
+    "productId": "2d029139-8bcd-444f-b060-ebfee971f614",
+    "name": "Dry Fruit Authentic",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Heavy Blend of Dry Fruits",
+    "price": 300,
+    "rating": 4.5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  },
+  {
+    "productId": "c133c6cf-5cc9-4b13-851d-31a60215a58b",
+    "name": "Kova Authentic",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Heavy Blend of Kova and Dry Fruits",
+    "price": 300,
+    "rating": 4.5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  }
+]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Kids Section
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[
+  {
+    "productId": "d3707a9a-48a4-45c1-95bf-02f50fc9bd66",
+    "name": "Chochlate Putharekulu",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Chochlate Treat with Putharekulu",
+    "price": 350,
+    "rating": 5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  },
+  {
+    "productId": "e9881567-2f85-4fc0-8b6d-8ccca356f4b7",
+    "name": "Horlicks Putharekulu",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Horlicks Putharekulu",
+    "price": 350,
+    "rating": 5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  },
+  {
+    "productId": "891caba3-8bd2-404d-b8dd-d36dde14e611",
+    "name": "Boost Putharekulu",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Boost Putharekulu",
+    "price": 350,
+    "rating": 5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  },
+  {
+    "productId": "76e8edfb-afaf-4d76-bc17-28e22d4d16d2",
+    "name": "Traingle Putharekulu",
+    "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+    "description": "Try Traingle Putharekulu",
+    "price": 350,
+    "rating": 5,
+    "piecePerBox": 10,
+    "NetWeight": 250
+  }
+]
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
