@@ -208,7 +208,6 @@ class AllProductsSection extends Component {
 
     return (
       <>
-        <Header />
         <div className="all-products-section">
           {this.renderAllProducts()}
         </div>
