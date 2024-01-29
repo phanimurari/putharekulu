@@ -1,64 +1,8 @@
-import {Component} from 'react'
+import { Component } from 'react'
 import Loader from 'react-loader-spinner'
-
+import ProductItem from './Putharekulu'
 import './index.css'
-
-const categoryOptions = [
-  {
-    name: 'Clothing',
-    categoryId: '1',
-  },
-  {
-    name: 'Electronics',
-    categoryId: '2',
-  },
-  {
-    name: 'Appliances',
-    categoryId: '3',
-  },
-  {
-    name: 'Grocery',
-    categoryId: '4',
-  },
-  {
-    name: 'Toys',
-    categoryId: '5',
-  },
-]
-
-const sortbyOptions = [
-  {
-    optionId: 'PRICE_HIGH',
-    displayText: 'Price (High-Low)',
-  },
-  {
-    optionId: 'PRICE_LOW',
-    displayText: 'Price (Low-High)',
-  },
-]
-
-const ratingsList = [
-  {
-    ratingId: '4',
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/rating-four-stars-img.png',
-  },
-  {
-    ratingId: '3',
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/rating-three-stars-img.png',
-  },
-  {
-    ratingId: '2',
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/rating-two-stars-img.png',
-  },
-  {
-    ratingId: '1',
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/rating-one-star-img.png',
-  },
-]
+import Header from '../common/Header'
 
 const apiStatusConstants = {
   initial: 'INITIAL',
@@ -71,7 +15,6 @@ class AllProductsSection extends Component {
   state = {
     productsList: [],
     apiStatus: apiStatusConstants.initial,
-    activeOptionId: sortbyOptions[0].optionId,
     activeCategoryId: '',
     searchInput: '',
     activeRatingId: '',
@@ -81,72 +24,101 @@ class AllProductsSection extends Component {
     this.getProducts()
   }
 
-  getProducts = async () => {
+  getProducts = () => {
     this.setState({
       apiStatus: apiStatusConstants.inProgress,
-    })
-    const jwtToken = Cookies.get('jwt_token')
-    const {activeOptionId, activeCategoryId, searchInput, activeRatingId} =
-      this.state
-    const apiUrl = `https://apis.ccbp.in/products?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`
-    const options = {
-      headers: {
-        Authorization: `Bearer ${jwtToken}`,
-      },
-      method: 'GET',
-    }
-    const response = await fetch(apiUrl, options)
-    if (response.ok) {
-      const fetchedData = await response.json()
-      const updatedData = fetchedData.products.map(product => ({
-        title: product.title,
-        brand: product.brand,
-        price: product.price,
-        id: product.id,
-        imageUrl: product.image_url,
-        rating: product.rating,
-      }))
-      this.setState({
-        productsList: updatedData,
-        apiStatus: apiStatusConstants.success,
-      })
-    } else {
-      this.setState({
-        apiStatus: apiStatusConstants.failure,
-      })
-    }
-  }
+    });
 
-  changeSortby = activeOptionId => {
-    this.setState({activeOptionId}, this.getProducts)
-  }
-
-  clearFilters = () => {
-    this.setState(
+    // Dummy data
+    const dummyData = [
+      { "productType": "BasicSection", "productId": "2472d02b-6fb0-403b-bd7b-84ec1c4f0f56", "name": "Dry Fruit Putharekulu", "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg", "description": "Made with Dry Fruits like Kaju, etc", "price": 350, "rating": 4.8, "piecePerBox": 10, "NetWeight": "100 gms" },
+      { "productType": "BasicSection", "productId": "19857bee-ebd2-4106-8e35-239f81a1bb34", "name": "Kova Putharekulu", "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg", "description": "Made with Dry Fruits like Kaju and kova etc", "price": 400, "rating": 4.8, "piecePerBox": 10, "NetWeight": 250 },
+      { "productType": "BasicSection", "productId": "06b2071f-4165-476d-9e73-0416df8d3e46", "name": "Plane Pootharekulu Sugar", "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg", "description": "Lite weight putharekulu with sugar", "price": 150, "rating": 5, "piecePerBox": 10, "NetWeight": 250 },
+      { "productType": "BasicSection", "productId": "1064dbef-f51c-4506-99c1-93f9e94a6976", "name": "Plane Pootharekulu Jaggery", "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg", "description": "Lite weight putharekulu with jaggery", "price": 150, "rating": 5, "piecePerBox": 10, "NetWeight": 250 },
       {
-        searchInput: '',
-        activeCategoryId: '',
-        activeRatingId: '',
+        "productId": "d3707a9a-48a4-45c1-95bf-02f50fc9bd66",
+        "name": "Chochlate Putharekulu",
+        "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+        "description": "Chochlate Treat with Putharekulu",
+        "price": 350,
+        "rating": 5,
+        "piecePerBox": 10,
+        "NetWeight": 250,
+        "productType": "KidsSection"
       },
-      this.getProducts,
-    )
-  }
+      {
+        "productId": "e9881567-2f85-4fc0-8b6d-8ccca356f4b7",
+        "name": "Horlicks Putharekulu",
+        "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+        "description": "Horlicks Putharekulu",
+        "price": 350,
+        "rating": 5,
+        "piecePerBox": 10,
+        "NetWeight": 250,
+        "productType": "KidsSection"
+      },
+      {
+        "productId": "891caba3-8bd2-404d-b8dd-d36dde14e611",
+        "name": "Boost Putharekulu",
+        "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+        "description": "Boost Putharekulu",
+        "price": 350,
+        "rating": 5,
+        "piecePerBox": 10,
+        "NetWeight": 250,
+        "productType": "KidsSection"
+      },
+      {
+        "productId": "76e8edfb-afaf-4d76-bc17-28e22d4d16d2",
+        "name": "Traingle Putharekulu",
+        "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+        "description": "Try Traingle Putharekulu",
+        "price": 350,
+        "rating": 5,
+        "piecePerBox": 10,
+        "NetWeight": 250,
+        "productType": "KidsSection"
+      }
+      ,
+      {
+        "productId": "2d029139-8bcd-444f-b060-ebfee971f614",
+        "name": "Dry Fruit Authentic",
+        "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+        "description": "Heavy Blend of Dry Fruits",
+        "price": 300,
+        "rating": 4.5,
+        "piecePerBox": 10,
+        "NetWeight": 250,
+        "productType": "AuthenticSection"
+      },
+      {
+        "productId": "c133c6cf-5cc9-4b13-851d-31a60215a58b",
+        "name": "Kova Authentic",
+        "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
+        "description": "Heavy Blend of Kova and Dry Fruits",
+        "price": 300,
+        "rating": 4.5,
+        "piecePerBox": 10,
+        "NetWeight": 250,
+        "productType": "AuthenticSection"
+      }
 
-  changeRating = activeRatingId => {
-    this.setState({activeRatingId}, this.getProducts)
-  }
+    ];
 
-  changeCategory = activeCategoryId => {
-    this.setState({activeCategoryId}, this.getProducts)
-  }
+    // Function to update the state with dummy data
+    const updateStateWithDummyData = () => {
+      this.setState({
+        productsList: dummyData,
+        apiStatus: apiStatusConstants.success,
+      });
+    };
 
-  enterSearchInput = () => {
-    this.getProducts()
-  }
+    // Simulate API call with a delay of 5 seconds
+    setTimeout(() => {
+      updateStateWithDummyData();
+    }, 3500);
+  };
 
-  changeSearchInput = searchInput => {
-    this.setState({searchInput})
-  }
 
   renderFailureView = () => (
     <div className="products-error-view-container">
@@ -164,20 +136,14 @@ class AllProductsSection extends Component {
     </div>
   )
 
-  renderProductsListView = () => {
-    const {productsList, activeOptionId} = this.state
+  renderProductsListView = (productsList) => {
     const shouldShowProductsList = productsList.length > 0
 
     return shouldShowProductsList ? (
       <div className="all-products-container">
-        <ProductsHeader
-          activeOptionId={activeOptionId}
-          sortbyOptions={sortbyOptions}
-          changeSortby={this.changeSortby}
-        />
         <ul className="products-list">
           {productsList.map(product => (
-            <ProductCard productData={product} key={product.id} />
+            <ProductItem productData={product} key={product.productId} />
           ))}
         </ul>
       </div>
@@ -196,6 +162,27 @@ class AllProductsSection extends Component {
     )
   }
 
+  renderSuccessView = () => {
+    const { productsList, } = this.state
+
+    const basicSection = productsList.filter(eachProduct => eachProduct.productType === "BasicSection")
+    const authenticSection = productsList.filter(eachProduct => eachProduct.productType === "AuthenticSection")
+    const kidsSection = productsList.filter(eachProduct => eachProduct.productType === "KidsSection")
+
+    return (
+      <>
+        <h2 className='products-heading'>Putharekulu</h2>
+        {this.renderProductsListView(basicSection)}
+        <h2 className='products-heading'>Authentic Sweets</h2>
+        {this.renderProductsListView(authenticSection)}
+        <h2 className='products-heading'> Kids Section</h2>
+        {this.renderProductsListView(kidsSection)}
+      </>
+
+    )
+
+  }
+
   renderLoadingView = () => (
     <div className="products-loader-container">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
@@ -203,11 +190,11 @@ class AllProductsSection extends Component {
   )
 
   renderAllProducts = () => {
-    const {apiStatus} = this.state
+    const { apiStatus } = this.state
 
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderProductsListView()
+        return this.renderSuccessView()
       case apiStatusConstants.failure:
         return this.renderFailureView()
       case apiStatusConstants.inProgress:
@@ -218,24 +205,14 @@ class AllProductsSection extends Component {
   }
 
   render() {
-    const {activeCategoryId, searchInput, activeRatingId} = this.state
 
     return (
-      <div className="all-products-section">
-        <FiltersGroup
-          searchInput={searchInput}
-          categoryOptions={categoryOptions}
-          ratingsList={ratingsList}
-          changeSearchInput={this.changeSearchInput}
-          enterSearchInput={this.enterSearchInput}
-          activeCategoryId={activeCategoryId}
-          activeRatingId={activeRatingId}
-          changeCategory={this.changeCategory}
-          changeRating={this.changeRating}
-          clearFilters={this.clearFilters}
-        />
-        {this.renderAllProducts()}
-      </div>
+      <>
+        <Header />
+        <div className="all-products-section">
+          {this.renderAllProducts()}
+        </div>
+      </>
     )
   }
 }
