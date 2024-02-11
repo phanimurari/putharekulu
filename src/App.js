@@ -6,6 +6,7 @@ import Home from './components/Home'
 import AllProductsSection from './components/products'
 import ProductItemDetails from './components/products/ProductItemDetails'
 import CartContext from './context/CartContext'
+import UserCart from './components/cart/UserCart'
 
 class App extends Component {
   state = {
@@ -98,8 +99,8 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path='/products' component={AllProductsSection} />
           <Route exact path='/products/:name' component={ProductItemDetails} />
+          <Route exact path='/cart' component={UserCart} />
         </Switch>
-
       </CartContext.Provider>
     )
   }

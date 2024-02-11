@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import Loader from 'react-loader-spinner'
 import ProductItem from './Putharekulu'
+import Header from '../common/Header'
 import './index.css'
 
 const apiStatusConstants = {
@@ -204,9 +205,12 @@ class AllProductsSection extends Component {
   }
 
   render() {
-
+    const { match } = this.props
+    let path = ''
+    if (match) { path = match.path }
     return (
       <>
+        {path === "/products" && <Header />}
         <div className="all-products-section">
           {this.renderAllProducts()}
         </div>

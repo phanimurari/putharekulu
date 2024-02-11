@@ -179,9 +179,9 @@ class ProductItemDetails extends Component {
         ]
 
         const updatedData = data.map(eachobject => this.getFormattedData(eachobject))
-        console.log(updatedData, name)
+        //   console.log(updatedData, name)
         const respectiveProductData = updatedData.filter(eachobject => eachobject.name === name)
-        console.log(respectiveProductData)
+        //   console.log(respectiveProductData)
         const similarProductsData = updatedData.filter(eachObject =>
             eachObject.productType === respectiveProductData[0].productType
             && eachObject.id !== respectiveProductData[0].id)

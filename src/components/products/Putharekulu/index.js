@@ -5,7 +5,7 @@ import './index.css'
 const ProductItem = props => {
     const { productData } = props
     const { productId, name, imageUrl, description, price, rating, } = productData
-    console.log(productData)
+    // console.log(productData)
     const [isHovered, setIsHovered] = useState(false)
 
     const handleMouseEnter = () => {
