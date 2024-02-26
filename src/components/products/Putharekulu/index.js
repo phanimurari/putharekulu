@@ -24,7 +24,7 @@ const ProductItem = props => {
         >
             <Link to={`/products/${name}`} className="link-item">
                 {isHovered && (
-                    <Link to={`/products/${productId}`} className="view-link">
+                    <Link to={`/products/${name}`} className="view-link">
                         <button type="button" className="view-button">
                             View
                         </button>
