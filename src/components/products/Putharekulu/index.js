@@ -4,8 +4,8 @@ import './index.css'
 
 const ProductItem = props => {
     const { productData } = props
-    const { productId, name, imageUrl, description, price, rating, piecePerBox, NetWeight } = productData
-    console.log(productData)
+    const { productId, name, imageUrl, description, price, rating, } = productData
+    // console.log(productData)
     const [isHovered, setIsHovered] = useState(false)
 
     const handleMouseEnter = () => {
@@ -22,9 +22,9 @@ const ProductItem = props => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Link to={`/products/${productId}`} className="link-item">
+            <Link to={`/products/${name}`} className="link-item">
                 {isHovered && (
-                    <Link to={`/products/${productId}`} className="view-link">
+                    <Link to={`/products/${name}`} className="view-link">
                         <button type="button" className="view-button">
                             View
                         </button>
