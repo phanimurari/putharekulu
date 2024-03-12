@@ -70,12 +70,6 @@ const Header = props => {
               </Link>
             </li>
           </ul>
-          <button
-            type="button"
-            className="logout-desktop-btn"
-          >
-            Order Now
-          </button>
         </div>
       </div>
       <div className="nav-menu-mobile">

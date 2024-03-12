@@ -71,7 +71,7 @@ class ProductItemDetails extends Component {
                 "productType": "BasicSection",
                 "name": "Dry Fruit Putharekulu",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Dry Fruit Putharekulu is a delightful traditional treat crafted with a meticulous blend of premium dry fruits, including the rich and creamy goodness of Kaju (cashews), along with an assortment of other high-quality dry fruits. Each bite is a symphony of flavors, combining the nutty richness of Kaju with the unique textures and tastes of various dry fruits. Our artisans carefully prepare these delicacies, ensuring a perfect balance of sweetness and crunch in every piece.\n\nThe meticulous process involves selecting the finest dry fruits, ensuring their freshness and quality. These handpicked ingredients are then expertly blended to create a harmonious mixture that forms the heart of Dry Fruit Putharekulu. The result is a sweet indulgence that captures the essence of traditional craftsmanship and the rich heritage of authentic Putharekulu.\n\nWhether you're a connoisseur of traditional sweets or someone with a penchant for gourmet delights, Dry Fruit Putharekulu is sure to satisfy your taste buds. It makes for a perfect gift on special occasions or a delightful treat to share with family and friends. Experience the joy of savoring these delectable Putharekulus, where the natural flavors of premium dry fruits come together to create a culinary masterpiece.",
+                "description": "Dry Fruit Putharekulu is a delightful traditional treat crafted with a meticulous blend of premium dry fruits.",
                 "NetWeight": "100 gms",
                 "piecePerBox": 10,
                 "price": 350,
@@ -82,7 +82,7 @@ class ProductItemDetails extends Component {
                 "productType": "BasicSection",
                 "name": "Kova Putharekulu",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Kova Putharekulu is a true embodiment of indulgence, meticulously crafted with a luscious blend of premium dry fruits, featuring the rich creaminess of Kaju (cashews) and the velvety smoothness of Kova (reduced milk). This exquisite delicacy takes the traditional Putharekulu to new heights, offering a symphony of flavors and textures in every bite.\n\nOur artisans take great care in selecting the finest dry fruits, ensuring a medley of tastes and aromas that elevate the Putharekulu experience. The inclusion of Kaju adds a delightful nuttiness, while the addition of Kova imparts a luxurious creaminess that lingers on the palate. Each piece is a testament to the craftsmanship that goes into creating this fusion of tradition and innovation.\n\nThe preparation involves a meticulous process, where the dry fruits are blended with precision to achieve the perfect balance of sweetness and richness. The result is a sensory delight that captivates the taste buds, making Kova Putharekulu a sought-after treat for those who appreciate the finer things in confectionery.\n\nWhether you're sharing these delectable delights with loved ones or savoring them on your own, Kova Putharekulu promises a journey of taste and texture that transports you to the heart of authentic culinary craftsmanship. Experience the magic of tradition and innovation harmoniously coming together in every piece of Kova Putharekulu.",
+                "description": "Kova Putharekulu is a true embodiment of indulgence, meticulously crafted with a luscious blend of premium dry fruits.",
                 "NetWeight": "250 gms",
                 "piecePerBox": 10,
                 "price": 400,
@@ -93,7 +93,7 @@ class ProductItemDetails extends Component {
                 "productType": "BasicSection",
                 "name": "Plane Pootharekulu Sugar",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Indulge in the delicate sweetness of our Plane Pootharekulu Sugar, a confectionery masterpiece that brings a touch of elegance to tradition. This exquisite treat redefines the art of sweetness with its feather-light texture and delightful sugary notes.\n\nCrafted with precision, each piece of Plane Pootharekulu Sugar is a harmonious blend of simplicity and decadence. The thin rice starch sheets, layered with care, create a crispy texture that melts in your mouth. The addition of sugar adds a gentle sweetness, enhancing the overall taste experience.\n\nWhether enjoyed as a personal treat or shared with loved ones, Plane Pootharekulu Sugar promises a moment of bliss with every bite. Embrace the magic of tradition with this confection—a celebration of lightness and sweetness in every exquisite layer.",
+                "description": "Indulge in the delicate sweetness of our Plane Pootharekulu Sugar, a confectionery masterpiece that brings a touch of elegance to tradition.",
                 "NetWeight": "250 gms",
                 "piecePerBox": 10,
                 "price": 150,
@@ -104,7 +104,7 @@ class ProductItemDetails extends Component {
                 "productType": "BasicSection",
                 "name": "Plane Pootharekulu Jaggery",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Savor the goodness of our Plane Pootharekulu Jaggery, a delightful fusion of tradition and health. Immerse yourself in the rich flavors of this confection, where the essence of jaggery enhances the sweetness and adds a nutritional touch to each bite.\n\nCrafted with care, our Plane Pootharekulu Jaggery maintains the traditional feather-light layers, creating a unique texture that is both crispy and satisfying. The thin rice starch sheets encapsulate the natural sweetness of jaggery, providing a wholesome taste that lingers on the palate.\n\nPerfect for those who appreciate a healthier alternative, this lite-weight Pootharekulu with jaggery is a guilt-free indulgence. Share the joy of this exquisite treat with family and friends, celebrating the fusion of tradition and well-being in every delightful layer.",
+                "description": "Savor the goodness of our Plane Pootharekulu Jaggery, a delightful fusion of tradition and health. Immerse yourself in the rich flavors of this confection, where the essence of jaggery enhances the sweetness and adds a nutritional touch to each bite.",
                 "NetWeight": "250 gms",
                 "piecePerBox": 10,
                 "price": 150,
@@ -137,7 +137,7 @@ class ProductItemDetails extends Component {
                 "productType": "KidsSection",
                 "name": "Chochlate Putharekulu",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Indulge your little ones in a delightful experience with our Chochlate Putharekulu. This heavenly treat combines the rich flavors of premium chocolate with the traditional charm of Putharekulu, creating a unique and captivating blend. Carefully crafted to perfection, each piece encapsulates the velvety essence of chocolate, enhancing the signature texture of Putharekulu.\n\nOur Chochlate Putharekulu is more than just a sweet; it's a culinary journey for children's taste buds. The harmonious fusion of creamy chocolate and delicate layers of Putharekulu creates a symphony of flavors, leaving a lasting impression. With every bite, your little ones embark on a flavorful adventure that introduces them to the enchanting world of delectable treats.\n\nDesigned for special occasions or simple indulgences, this delightful treat brings joy to your children's lives. The heavenly combination of Chochlate Putharekulu is not just a feast for the senses but also a source of happiness. Watch as their eyes light up with delight and satisfaction, making every moment memorable and special.",
+                "description": "Indulge your little ones in a delightful experience with our Chochlate Putharekulu. This heavenly treat combines the rich flavors of premium chocolate with the traditional charm of Putharekulu, creating a unique and captivating blend. Carefully crafted to perfection, each piece encapsulates the velvety essence of chocolate, enhancing the signature texture of Putharekulu.",
                 "NetWeight": "250 gms",
                 "piecePerBox": 10,
                 "price": 350,
@@ -148,7 +148,7 @@ class ProductItemDetails extends Component {
                 "productType": "KidsSection",
                 "name": "Horlicks Putharekulu",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Elevate your children's snacking experience with our Horlicks Putharekulu – a wholesome fusion of health and delectable taste. Specially crafted to provide a perfect blend of nutrition and indulgence, these treats are designed to be a source of energy for the growing ones. Infused with the goodness of Horlicks, each bite promises a unique combination of flavors that caters to both the health-conscious and taste enthusiasts.\n\nOur Horlicks-infused Putharekulu are not just snacks; they are a nutritious delight that supports your kids' well-being. The malted goodness of Horlicks adds a distinct flavor profile to the traditional Putharekulu, creating a snack that excites the taste buds while ensuring a dose of essential nutrients. It's a delightful way to encourage healthy snacking habits, making it a win-win for parents and kids alike.\n\nIdeal for school lunches, playdates, or as an evening treat, these Putharekulu are a convenient and tasty option for kids on the go. Give your kids the energy boost they need with our Horlicks-infused Putharekulu, where health meets happiness in every bite!",
+                "description": "Elevate your children's snacking experience with our Horlicks Putharekulu – a wholesome fusion of health and delectable taste. Specially crafted to provide a perfect blend of nutrition and indulgence, these treats are designed to be a source of energy for the growing ones. Infused with the goodness of Horlicks, each bite promises a unique combination of flavors that caters to both the health-conscious and taste enthusiasts.",
                 "NetWeight": "250 gms",
                 "piecePerBox": 10,
                 "price": 350,
@@ -159,7 +159,7 @@ class ProductItemDetails extends Component {
                 "productType": "KidsSection",
                 "name": "Boost Putharekulu",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Infuse joy and energy into your child's day with our Boost-flavored Putharekulu – a delightful combination of taste and nutrition. Designed to be a wholesome snack, these treats are crafted to cater to the taste preferences of children while ensuring they receive essential nutrients. Boost your child's mood and keep them active and happy with every bite of these delicious Putharekulu.\n\nThe unique fusion of Boost flavor with the traditional Putharekulu brings forth a snack that not only satisfies the taste buds but also contributes to your child's overall well-being. Packed with energy-boosting elements, these Putharekulu make for an ideal addition to your child's daily snack routine. Whether it's a quick bite during playtime or a tasty treat after school, our Boost-flavored Putharekulu are the perfect solution for busy parents looking to provide a nutritious yet enjoyable snack for their kids.\n\nSay goodbye to the dilemma of choosing between taste and health – our Boost-flavored Putharekulu deliver both in a convenient and fun package. Keep your child's spirits high and taste buds delighted with this flavorful and nutritious snack option.",
+                "description": "Infuse joy and energy into your child's day with our Boost-flavored Putharekulu – a delightful combination of taste and nutrition. Designed to be a wholesome snack, these treats are crafted to cater to the taste preferences of children while ensuring they receive essential nutrients. Boost your child's mood and keep them active and happy with every bite of these delicious Putharekulu.",
                 "NetWeight": "250 gms",
                 "piecePerBox": 10,
                 "price": 350,
@@ -170,13 +170,14 @@ class ProductItemDetails extends Component {
                 "productType": "KidsSection",
                 "name": "Traingle Putharekulu",
                 "imageUrl": "https://res.cloudinary.com/imphanimurari/image/upload/c_thumb,w_200,g_face/v1706350675/putharekulu/Putharekulu_Thumbnail_venqhk.jpg",
-                "description": "Elevate your snacking experience with our Triangle-shaped Putharekulu – a playful and delicious twist on the traditional treat. These delightful delights are crafted with precision, creating a snack that not only pays homage to the authentic flavors of Putharekulu but also adds a touch of whimsy with their unique triangular shape. Perfect for kids who appreciate the joy of trying something new, these treats are both visually appealing and irresistibly tasty.\n\nDesigned for those who seek a fun and innovative snacking option, our Triangle-shaped Putharekulu provide a delightful combination of traditional taste and creative presentation. The triangular form adds an element of excitement to each bite, making it an ideal choice for kids who love exploring unique and tasty treats. Whether enjoyed during playtime, shared among friends, or as a surprise addition to lunchboxes, these Triangle-shaped Putharekulu are sure to bring joy to every snacking moment.\n\nIndulge your taste buds in the magic of traditional flavors housed in a playful shape, creating an unforgettable snacking experience. Give your kids the pleasure of savoring something new and exciting with our Triangle-shaped Putharekulu – a treat that embodies the essence of fun and flavor in every bite.",
+                "description": "Elevate your snacking experience with our Triangle-shaped Putharekulu – a playful and delicious twist on the traditional treat. These delightful delights are crafted with precision, creating a snack that not only pays homage to the authentic flavors of Putharekulu but also adds a touch of whimsy with their unique triangular shape. Perfect for kids who appreciate the joy of trying something new, these treats are both visually appealing and irresistibly tasty.",
                 "NetWeight": "250 gms",
                 "piecePerBox": 10,
                 "price": 350,
                 "rating": 5
             }
-        ]
+        ];
+        
 
         const updatedData = data.map(eachobject => this.getFormattedData(eachobject))
         //   console.log(updatedData, name)
@@ -277,7 +278,6 @@ class ProductItemDetails extends Component {
                                     </div>
                                     <p className="reviews-count">{totalReviews} Reviews</p>
                                 </div>
-                                <p className="product-description">{description}</p>
                                 <div className="label-value-container">
                                     <p className="label">No. of Pieces:</p>
                                     <p className="value">{availability}</p>
@@ -313,6 +313,7 @@ class ProductItemDetails extends Component {
                                 >
                                     ADD TO CART
                                 </button>
+                                <p className="product-description">{description}</p>
                             </div>
                         </div>
                         <h1 className="similar-products-heading">Similar Products</h1>
