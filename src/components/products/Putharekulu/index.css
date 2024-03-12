@@ -93,7 +93,7 @@
 }
 
 .product-item.hovered {
-  background-color: lightgray;
+  background-color: #ffe599;
   border-radius: 3px;
   /* Dim/Blur effect */
 }
@@ -131,4 +131,8 @@
 .view-link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.product-info {
+  padding: 15px;
 }

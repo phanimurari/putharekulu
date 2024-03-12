@@ -31,6 +31,7 @@ const ProductItem = props => {
                     </Link>
                 )}
                 <img src={imageUrl} alt="product" className="thumbnail" />
+                <div className='product-info'>
                 <h1 className="title">{name}</h1>
                 <p className="description">{description}</p>
                 <div className="product-details">
@@ -45,6 +46,7 @@ const ProductItem = props => {
                             className="star"
                         />
                     </div>
+                </div>
                 </div>
             </Link>
         </li>
