@@ -1,7 +1,8 @@
 
 import { Component } from 'react'
 import { Link } from 'react-router-dom'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Loader from 'react-loader-spinner'
 import { BsPlusSquare, BsDashSquare } from 'react-icons/bs'
 
@@ -12,6 +13,7 @@ import CartContext from '../../.././context/CartContext'
 import SimilarProductItem from '../SimilarProductItem'
 
 import './index.css'
+import Footer from '../../common/Footer';
 
 const apiStatusConstants = {
     initial: 'INITIAL',
@@ -256,6 +258,7 @@ class ProductItemDetails extends Component {
                 } = productData
                 const { addCartItem } = value
                 const onClickAddToCart = () => {
+                    toast.success('🛒 Product Added to Cart');
                     addCartItem({ ...productData, quantity })
                 }
 
@@ -324,6 +327,7 @@ class ProductItemDetails extends Component {
                                 />
                             ))}
                         </ul>
+                        <ToastContainer position="bottom-center" />
                     </div>
                 )
             }}
@@ -352,6 +356,7 @@ class ProductItemDetails extends Component {
                 <div className="product-item-details-container">
                     {this.renderProductDetails()}
                 </div>
+                <Footer />
             </>
         )
     }

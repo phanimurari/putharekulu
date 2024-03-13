@@ -4,7 +4,6 @@ import CartContext from '../../.././context/CartContext'
 
 
 const Header = props => {
-
   const renderCartItemsCount = () => (
     <CartContext.Consumer>
       {value => {

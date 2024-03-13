@@ -3,6 +3,7 @@ import Loader from 'react-loader-spinner'
 import ProductItem from './Putharekulu'
 import Header from '../common/Header'
 import './index.css'
+import Footer from '../common/Footer'
 
 const apiStatusConstants = {
   initial: 'INITIAL',
@@ -214,6 +215,7 @@ class AllProductsSection extends Component {
         <div className="all-products-section">
           {this.renderAllProducts()}
         </div>
+        <Footer />
       </>
     )
   }
