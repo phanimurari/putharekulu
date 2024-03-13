@@ -1,7 +1,6 @@
 import { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import './App.css'
-import Header from './components/common/Header'
 import Home from './components/Home'
 import AllProductsSection from './components/products'
 import ProductItemDetails from './components/products/ProductItemDetails'

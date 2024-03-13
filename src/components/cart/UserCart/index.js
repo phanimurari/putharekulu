@@ -6,6 +6,7 @@ import CartListView from '../CartListView'
 import CartSummary from '../CartSummary'
 
 import './index.css'
+import Footer from '../../common/Footer'
 
 const Cart = () => (
     <CartContext.Consumer>
@@ -37,6 +38,7 @@ const Cart = () => (
                             </div>
                         )}
                     </div>
+                    <Footer />
                 </>
             )
         }}
